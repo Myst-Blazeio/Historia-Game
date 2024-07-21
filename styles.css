@@ -7,7 +7,7 @@ body {
     margin: 0;
     width:100vw;
     /* overflow:hidden; */
-    background-color: #fdacf4;
+    background-color: #e8cce5;
 }
 
 #game-container {
@@ -26,9 +26,9 @@ body {
     background-color: #caf4ff;
     border: 1px solid #9c765f;
     border-radius: 10px;
-    min-height: 50px;
-    width: 100vw;
-    justify-content: center;
+    min-height: 300px;
+    width: 100%;
+    justify-content: stretch;
     /* flex-wrap: nowrap; */
     overflow: scroll;
 }
@@ -40,7 +40,7 @@ body {
     background-color: #eae2b4;
     border: 2px dashed #6a4619;
     border-radius: 4px;
-    width: 200px;
+    width: 230px;
     min-height: 200px;
     justify-content: center;
 }
@@ -48,22 +48,19 @@ body {
 .card {
     margin: 5px;
     padding: 10px;
-
+    min-height: 100px;
+    min-width: 200px;
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
     background-color: #f8e3f7;
     cursor: grab;
     user-select: none;
-    
     display: flex;
     flex-direction: column;
-
-    text-align: center;
-    width: 300px;
-       
+    text-align: center;  
+    width: 200px;
     font-family: Arial, sans-serif;
 }
 
@@ -75,42 +72,39 @@ color: #000000;
 text-align: center;
 font-size: 18px;
 font-weight: bold;
+/* margin-bottom: 10px; */
+margin: auto;
 }
 
 .card img {
     max-height: 100%;
     max-width: 100%;
     object-fit: cover;
+    /* margin-left:50px; */
+    margin:auto;
 
 }
 
 .card .description {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     font-weight:lighter;
     border: 1px solid black;
-
-    margin-top: 5px; 
-
+    /* margin-top: 10px;  */
+    margin: auto;
     background-color: #a7def5;
     border-radius:3px ;
-        margin: 2px;
         padding: 3px;
-        color: #333;
-        font-size: 14px;
-        
+        color: #333;      
 }
 
 .card .date {
     display: none;
-
     border-radius: 5px;
     border: 2px solid green;
-    background-color: #2aca4f;
-    
+    background-color: #2aca4f; 
     /* margin-top: 5px; */
-    padding: 10px;
-    
+    padding: 10px;   
         color: #020202;
         font-weight: bold;
         text-align: center;
