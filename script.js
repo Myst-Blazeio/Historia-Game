@@ -10,18 +10,20 @@
     { event: "French Revolution Begins", date: 1789, image: "img.png", description: "The French Revolution starts." },
     { event: "First Flight by the Wright Brothers", date: 1903, image: "img.png", description: "The Wright brothers make their first successful flight." },
     { event: "Introduction of the Internet", date: 1983, image: "img.png", description: "The ARPANET adopts TCP/IP protocol, marking the beginning of the internet." },
-    { event: "Renaissance Period", date: 1400, image: "img.png", description: "The Renaissance period begins in Europe." },
-    { event: "Columbus Discovers America", date: 1492, image: "img.png", description: "Christopher Columbus discovers America." },
-    { event: "Industrial Revolution", date: 1760, image: "img.png", description: "The Industrial Revolution begins." },
-    { event: "End of World War II", date: 1945, image: "img.png", description: "World War II comes to an end." },
-    { event: "Start of the Cold War", date: 1947, image: "img.png", description: "The Cold War begins." },
-    { event: "Invention of the Telephone", date: 1876, image: "img.png", description: "Alexander Graham Bell invents the telephone." },
-    { event: "The Great Depression", date: 1929, image: "img.png", description: "The Great Depression begins." },
-    { event: "Nelson Mandela's Release from Prison", date: 1990, image: "img.png", description: "Nelson Mandela is released from prison." },
-    { event: "Fall of Constantinople", date: 1453, image: "img.png", description: "The fall of Constantinople marks the end of the Byzantine Empire." },
-    { event: "Start of the Black Death", date: 1347, image: "img.png", description: "The Black Death pandemic begins in Europe." },
+    // { event: "Renaissance Period", date: 1400, image: "img.png", description: "The Renaissance period begins in Europe." },
+    // { event: "Columbus Discovers America", date: 1492, image: "img.png", description: "Christopher Columbus discovers America." },
+    // { event: "Industrial Revolution", date: 1760, image: "img.png", description: "The Industrial Revolution begins." },
+    // { event: "End of World War II", date: 1945, image: "img.png", description: "World War II comes to an end." },
+    // { event: "Start of the Cold War", date: 1947, image: "img.png", description: "The Cold War begins." },
+    // { event: "Invention of the Telephone", date: 1876, image: "img.png", description: "Alexander Graham Bell invents the telephone." },
+    // { event: "The Great Depression", date: 1929, image: "img.png", description: "The Great Depression begins." },
+    // { event: "Nelson Mandela's Release from Prison", date: 1990, image: "img.png", description: "Nelson Mandela is released from prison." },
+    // { event: "Fall of Constantinople", date: 1453, image: "img.png", description: "The fall of Constantinople marks the end of the Byzantine Empire." },
+    // { event: "Start of the Black Death", date: 1347, image: "img.png", description: "The Black Death pandemic begins in Europe." },
 
 ];
+
+
 
 let mistakes = 0;
 let currentStreak = 0;
@@ -191,16 +193,26 @@ function checkOrder() {
 function gameOver() {
     document.getElementById("current-card-container").style.display = "none";
     document.getElementById("next-card-button").style.display = "none";
-    document.getElementById("timeline").style.display = "none";
+    document.getElementById("game-rules-button").style.display = "none";
+    document.getElementById("play-again-button").style.display = "block";
     if (timeline.children.length === events.length && checkOrder()) {
+        document.getElementById("timeline").style.display = "none";
         message.textContent = `Congratulations! You've placed all cards correctly.`;
     } else {
         message.textContent = `Game Over! Longest streak: ${longestStreak}`;
+        card.style.display="block"  
+        document.getElementById("timeline").style.display = "flex";
+        
     }
     timeline.innerHTML = '';
     currentCardContainer.innerHTML = '';
     nextCardButton.disabled = true;
 }
+
+function refreshPage() {
+    location.reload();
+}
+
 
 function flipCard(e) {
     if (e.currentTarget.classList.contains('flippable')) {
@@ -209,3 +221,28 @@ function flipCard(e) {
 }
 
 initializeGame();
+
+
+function toggleGameRules() {
+    var container = document.querySelector('.game-rules-container');
+    var tooltip = document.getElementById('game-rules-tooltip');
+
+    if (!tooltip) {
+        fetch('game-rules.txt')
+            .then(response => response.text())
+            .then(data => {
+                var tooltipDiv = document.createElement('div');
+                tooltipDiv.id = 'game-rules-tooltip';
+                tooltipDiv.className = 'game-rules-tooltip';
+                tooltipDiv.innerHTML = `
+                    <h3>Game Rules</h3>
+                    <div id="rules-content">${data.replace(/\n/g, '<br>')}</div>
+                `;
+                container.appendChild(tooltipDiv);
+                tooltipDiv.style.display = 'block';
+            })
+            .catch(error => console.error('Error loading game rules:', error));
+    } else {
+        tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+    }
+}

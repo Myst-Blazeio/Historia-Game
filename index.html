@@ -10,9 +10,17 @@
 
 <body>
     <div id="game-container">
-        <div id="timeline"></div>
+        
         <div id="current-card-container"></div>
+        <div class="temp" style="display:flex;">
         <button id="next-card-button" disabled>Load Next Card</button>
+        <!-- <button id="game-rules-button">Game Rules</button> -->
+        <div class="game-rules-container">
+            <button id="game-rules-button" onclick="toggleGameRules()">Game Rules</button>
+        </div>
+        </div>
+        <div id="timeline"></div>
+        <div id="play-again-button" onclick="refreshPage()">Play Again</div>
         <div id="message"></div>
     </div>
     <script src="script.js"></script>
