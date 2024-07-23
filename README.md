@@ -6,7 +6,9 @@ The Game is easy to play with _replaybility_ features.
 The general **RULES** to play this game are as follows:
 
 Rule 1: Place the cards in chronological order.
+
 Rule 2: You can drag and drop the cards.
+
 Rule 3: The longest streak means the number of cards correctly placed.
 
 Note* (WIP) Click on card in the timeline to reveal more information.
