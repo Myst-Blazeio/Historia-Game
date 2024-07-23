@@ -195,10 +195,13 @@ function gameOver() {
     document.getElementById("next-card-button").style.display = "none";
     document.getElementById("game-rules-button").style.display = "none";
     document.getElementById("play-again-button").style.display = "block";
+    
     if (timeline.children.length === events.length && checkOrder()) {
+        document.getElementById("game-rules-tooltip").style.display = "none";
         document.getElementById("timeline").style.display = "none";
         message.textContent = `Congratulations! You've placed all cards correctly.`;
     } else {
+        document.getElementById("game-rules-tooltip").style.display = "none";
         message.textContent = `Game Over! Longest streak: ${longestStreak}`;
         card.style.display="block"  
         document.getElementById("timeline").style.display = "flex";
