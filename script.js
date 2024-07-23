@@ -201,8 +201,8 @@ function gameOver() {
         document.getElementById("timeline").style.display = "none";
         message.textContent = `Congratulations! You've placed all cards correctly.`;
     } else {
-        document.getElementById("game-rules-tooltip").style.display = "none";
         message.textContent = `Game Over! Longest streak: ${longestStreak}`;
+        document.getElementById("game-rules-tooltip").style.display = "none";
         card.style.display="block"  
         document.getElementById("timeline").style.display = "flex";
         
