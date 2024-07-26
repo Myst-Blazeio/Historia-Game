@@ -77,12 +77,15 @@ function createCard(event) {
     card.innerHTML = `
         
             <div class="name">${event.event}</div>
-            <img src="${event.image}" alt="${event.event}" style="width: 100px;">
+            <img src="${event.image}" alt="${event.event}" class="unselectable">
             <div class="description">${event.description}</div>
             <div class="date">${event.date}</div>
         
         <div class="back">
-        <p>wikipedia link</p>
+        <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae saepe dicta ratione perspiciatis voluptatum aperiam nam eius magnam amet tempora accusantium ea dolor voluptate, rem explicabo itaque, ut minima. Eos.</p>
+        <div class="wikipedia"> 
+        <a href="https://github.com/Myst-Blazeio/Historia-Game.github.io" target="_blank">Wikipedia Link</a>
+        </div>
         </div>
     `;
     card.dataset.date = event.date;
