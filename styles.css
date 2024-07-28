@@ -80,6 +80,12 @@ body {
     margin: 10px;
 }
 
+/* .image{
+    color:red;
+    width: 100%;
+    height: 100%;
+} */
+
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -93,6 +99,7 @@ img {
     -moz-user-drag: none;
     -o-user-drag: none;
     width: 150px;
+    height: 80px;
 }
 
 .card img {
@@ -292,18 +299,19 @@ img {
 }
 
 .information {
-    font-size: 14px;
-        text-align: center;
+    font-size: 15px;
+        text-align:left;
         font-weight: lighter;
         border: 1px solid black;
         margin: 5px;
         /* margin: auto; */
         background-color: #a7def5;
         border-radius: 3px;
-        padding: 3px;
+        padding: 5px;
         color: #333;
+        height: 230px;
 }
 
 .wikipedia {
-    margin-top: 100px;
+    margin-top: auto;
 }

@@ -1,0 +1,142 @@
+[
+    { 
+        "event": "Invention of the Wheel", 
+        "date": -3500, 
+        "image": "img.png", 
+        "description": "The invention of the wheel, a key technological advancement.",
+        "additional_info": "This pivotal invention greatly impacted transportation, enabling the development of carts, chariots, and later, vehicles, revolutionizing trade and mobility."
+    },
+    { 
+        "event": "Discovery of Fire", 
+        "date": -100000, 
+        "image": "img.png", 
+        "description": "The discovery and control of fire.",
+        "additional_info": "Fire provided warmth, protection from predators, and a method to cook food, fundamentally changing human lifestyle, health, and survival."
+    },
+    { 
+        "event": "First Manned Moon Landing", 
+        "date": 1969, 
+        "image": "img.png", 
+        "description": "Neil Armstrong and Buzz Aldrin land on the moon.",
+        "additional_info": "The Apollo 11 mission, a major milestone in space exploration, showcased human ingenuity and marked the beginning of lunar exploration."
+    },
+    { 
+        "event": "Fall of the Berlin Wall", 
+        "date": 1989, 
+        "image": "img.png", 
+        "description": "The fall of the Berlin Wall marking the end of the Cold War.",
+        "additional_info": "This event symbolized the reunification of Germany and the collapse of communist regimes in Eastern Europe, leading to greater political freedom."
+    },
+    { 
+        "event": "Start of World War I", 
+        "date": 1914, 
+        "image": "img.png", 
+        "description": "The beginning of World War I.",
+        "additional_info": "This global conflict, lasting until 1918, involved many world powers and resulted in significant political, social, and economic changes."
+    },
+    { 
+        "event": "Printing Press Invented", 
+        "date": 1440, 
+        "image": "img.png", 
+        "description": "Johannes Gutenberg invents the printing press.",
+        "additional_info": "Gutenberg's press revolutionized the spread of knowledge by making books and information more accessible, sparking the Renaissance and scientific revolution."
+    },
+    { 
+        "event": "Signing of the Declaration of Independence", 
+        "date": 1776, 
+        "image": "img.png", 
+        "description": "The United States Declaration of Independence is signed.",
+        "additional_info": "This document, declaring the American colonies' independence from British rule, laid the foundation for the United States' democratic government."
+    },
+    { 
+        "event": "French Revolution Begins", 
+        "date": 1789, 
+        "image": "img.png", 
+        "description": "The French Revolution starts.",
+        "additional_info": "The revolution led to the rise of modern democracies and the end of absolute monarchies in France, profoundly influencing global political thought."
+    },
+    { 
+        "event": "First Flight by the Wright Brothers", 
+        "date": 1903, 
+        "image": "img.png", 
+        "description": "The Wright brothers make their first successful flight.",
+        "additional_info": "This historic flight in Kitty Hawk, North Carolina, marked the beginning of modern aviation and transformed transportation and warfare."
+    },
+    { 
+        "event": "Introduction of the Internet", 
+        "date": 1983, 
+        "image": "img.png", 
+        "description": "The ARPANET adopts TCP/IP protocol, marking the beginning of the internet.",
+        "additional_info": "The internet revolutionized communication, information sharing, and global connectivity, profoundly impacting every aspect of modern life."
+    },
+    { 
+        "event": "Renaissance Period", 
+        "date": 1400, 
+        "image": "img.png", 
+        "description": "The Renaissance period begins in Europe.",
+        "additional_info": "This cultural movement emphasized art, science, and humanism, sparking a revival of learning and creativity that shaped modern Western civilization."
+    },
+    { 
+        "event": "Columbus Discovers America", 
+        "date": 1492, 
+        "image": "img.png", 
+        "description": "Christopher Columbus discovers America.",
+        "additional_info": "Columbus's voyage opened up the New World to European exploration and colonization, leading to significant cultural and demographic changes."
+    },
+    { 
+        "event": "Industrial Revolution", 
+        "date": 1760, 
+        "image": "img.png", 
+        "description": "The Industrial Revolution begins.",
+        "additional_info": "This period saw the transition to new manufacturing processes, significantly increasing production capabilities and altering economies and societies."
+    },
+    { 
+        "event": "End of World War II", 
+        "date": 1945, 
+        "image": "img.png", 
+        "description": "World War II comes to an end.",
+        "additional_info": "The war's end led to significant geopolitical changes, the establishment of the United Nations, and set the stage for the Cold War."
+    },
+    { 
+        "event": "Start of the Cold War", 
+        "date": 1947, 
+        "image": "img.png", 
+        "description": "The Cold War begins.",
+        "additional_info": "This period was marked by political tension and military rivalry between the US and the Soviet Union, influencing global alliances and conflicts."
+    },
+    { 
+        "event": "Invention of the Telephone", 
+        "date": 1876, 
+        "image": "img.png", 
+        "description": "Alexander Graham Bell invents the telephone.",
+        "additional_info": "The telephone transformed global communication, making it faster and more direct, and paved the way for future telecommunications advancements."
+    },
+    { 
+        "event": "The Great Depression", 
+        "date": 1929, 
+        "image": "img.png", 
+        "description": "The Great Depression begins.",
+        "additional_info": "This economic downturn had profound effects on global economies and societies, leading to widespread unemployment and poverty."
+    },
+    { 
+        "event": "Nelson Mandela's Release from Prison", 
+        "date": 1990, 
+        "image": "img.png", 
+        "description": "Nelson Mandela is released from prison.",
+        "additional_info": "Mandela's release marked a significant step towards the end of apartheid in South Africa and the establishment of a multiracial democracy."
+    },
+    { 
+        "event": "Fall of Constantinople", 
+        "date": 1453, 
+        "image": "img.png", 
+        "description": "The fall of Constantinople marks the end of the Byzantine Empire.",
+        "additional_info": "This event significantly impacted the trade routes and power dynamics of the region, marking the rise of the Ottoman Empire."
+    },
+    { 
+        "event": "Start of the Black Death", 
+        "date": 1347, 
+        "image": "img.png", 
+        "description": "The Black Death pandemic begins in Europe.",
+        "additional_info": "The plague caused widespread death and societal upheaval across Europe, drastically reducing the population and altering social structures."
+    }
+]
